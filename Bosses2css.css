@@ -1,0 +1,47 @@
+main{
+    height: 2900px;
+}
+main div h3{
+    margin-left:1%;
+}
+.IrVoltar{
+    display: flex;
+    flex-direction:row;
+    padding: 0px 500px;
+}
+.boss2{
+    display:flex;
+    flex-direction:row;
+}
+.boss3{
+    display:flex;
+    flex-direction:row;
+    margin-inline: 20%;
+}
+/* Estilos gerais para dispositivos móveis até 450px */
+@media (max-width: 450px) {
+    /* Ajustes no main */
+    main {
+        height: auto; /* Ajusta a altura do main para ser dinâmica */
+    }
+
+    /* Ajustes no título dentro do main */
+    main div h3 {
+        margin-left: 5%; /* Ajusta a margem para ficar mais centralizado em telas menores */
+    }
+
+    .IrVoltar {
+        display: flex;
+        flex-direction: column; /* Organiza os itens em uma coluna */
+        align-items: center; /* Alinha os itens ao centro horizontalmente */
+        justify-content: center; /* Alinha os itens ao centro verticalmente */
+        padding: 0px 20px; /* Ajusta o padding para evitar que o conteúdo fique muito apertado */
+        text-align: center; /* Centraliza o conteúdo de texto */
+    }
+    /* Ajustes nas classes boss2 e boss3 */
+    .boss2, .boss3 {
+        display: flex;
+        flex-direction: column; /* Organiza os itens em uma coluna */
+        align-items: center; /* Centraliza os itens */
+        margin-inline: 5%; /* Ajusta a margem para que o conteúdo não fique muito afastado das bordas */
+    }

@@ -1,0 +1,135 @@
+nav{
+    background-color:royalblue;
+    width: 100%;
+    height:50px;
+}
+nav div h3{
+    padding: 1px 45px;
+}
+nav div a{
+    padding: 9px 4.3%;
+}
+main{
+    width:1500px;
+    height: 1100px;
+    flex-direction: row;
+    margin-top:20px;
+}
+main h3{
+    margin-inline: 2%;
+}
+main div{
+    padding-top: 40px;
+    display:flex;
+    align-items:center;
+    flex-direction: row;
+}
+main div a{
+    color: royalblue;
+    text-decoration: Inline;
+    padding: 4px 3px;
+    border-radius: 20px;    
+}
+main div a:hover{
+    text-decoration: inline;
+    color: red;
+}
+main div h3{
+    max-width: 700px;
+    margin-left: 2%;
+    margin-right: 0.1%;
+}
+main div img{
+    width: 400px;
+    height: 250px;
+    border-radius:20px;
+}
+footer{
+    width: 100%;
+    margin-top:140px;
+}
+.ilhas img{
+    margin-left: 9.5%;
+}
+.ilhas2 img{
+    margin-left: 26%;
+}
+.ilhas3 img{
+    margin-left: 9.8%;
+}
+.ilhas4 img{
+    margin-left: 25.1%;
+}
+/* Estilos gerais para dispositivos móveis */
+@media (max-width: 450px) {
+
+    /* Ajustes para o nav */
+    nav {
+        height: auto; /* Deixa o nav com altura dinâmica */
+        padding: 10px 0; /* Ajusta o padding do nav */
+    }
+
+    nav div {
+        display: flex;
+        flex-direction: column; /* Organiza os itens do nav em coluna em telas pequenas */
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav div h3 {
+        padding: 5px;
+        font-size: 14px; /* Ajusta o tamanho da fonte */
+    }
+
+    nav div a {
+        padding: 5px 8px; /* Reduz o padding dos links */
+        font-size: 12px; /* Reduz o tamanho da fonte */
+        color: black;
+        text-decoration: none; /* Remove o sublinhado */
+    }
+
+    /* Ajustes para o main */
+    main {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    /* Ajustes para os divs dentro de main */
+    main div {
+        display: flex;
+        flex-direction: column; /* Organiza os itens em coluna */
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    main div a {
+        padding: 6px 8px;
+        font-size: 14px; /* Ajusta o tamanho da fonte */
+    }
+
+    main div img {
+        width: 90%; /* Ajusta a largura da imagem para 90% da tela */
+        height: auto; /* Mantém a proporção da imagem */
+        border-radius: 20px;
+    }
+
+    main div h3 {
+        font-size: 14px;
+        margin: 5px;
+        max-width: 90%; /* Ajusta a largura do título */
+    }
+
+    /* Ajustes para as imagens das ilhas */
+    .ilhas img, .ilhas2 img, .ilhas3 img, .ilhas4 img {
+        width: 100%; /* Ajusta as imagens para a largura da tela */
+        margin-left: 0;
+        margin-bottom: 10px; /* Espaçamento inferior entre as imagens */
+    }
+
+    /* Ajustes para o footer */
+    footer {
+        width: 100%;
+        margin-top: 20px;
+    }
+}

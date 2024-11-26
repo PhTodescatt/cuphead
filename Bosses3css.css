@@ -1,0 +1,81 @@
+main{
+    height:3150px;
+}
+nav div a{
+    padding: 9px 80px;
+}
+@media (max-width: 450px) {
+    /* Ajustes no main */
+    main {
+        height: auto; /* Ajusta a altura do main para ser dinâmica */
+        width: 100%; /* Garante que o main ocupe toda a largura disponível */
+        margin-block: 15px;
+    }
+
+    /* Ajustes no título dentro do main */
+    main div h3 {
+        margin-left: 5%; /* Ajusta a margem para ficar mais centralizado em telas menores */
+        font-size: 16px; /* Ajusta o tamanho da fonte do título para caber melhor */
+    }
+
+    /* Ajustes na classe IrVoltar */
+    .IrVoltar {
+        display: flex;
+        flex-direction: column; /* Organiza os itens em uma coluna */
+        align-items: center; /* Centraliza os itens horizontalmente */
+        justify-content: center; /* Centraliza os itens verticalmente */
+        padding: 0px 20px; /* Ajusta o padding para evitar que o conteúdo fique muito apertado */
+        text-align: center; /* Centraliza o conteúdo de texto */
+        width: 100%; /* Garante que o container ocupe toda a largura */
+    }
+
+    /* Ajustes para os links dentro do main */
+    main div a {
+        color: royalblue;
+        text-decoration: inline;
+        font-size: 14px; /* Ajusta o tamanho da fonte para dispositivos móveis */
+    }
+
+    /* Ajuste de hover */
+    main div a:hover {
+        text-decoration: inline;
+        color: red;
+    }
+
+    /* Ajustes para as imagens */
+    main div img {
+        height: 200px; /* Ajusta a altura das imagens */
+        width: 90%; /* Garante que a largura das imagens ocupe 90% da largura disponível */
+        margin: 10px 0; /* Ajusta a margem */
+        border-radius: 20px; /* Mantém a borda arredondada */
+    }
+
+    /* Ajustes para a classe boss2 e boss3 */
+    .boss2, .boss3 {
+        display: flex;
+        flex-direction: column; /* Organiza os itens em uma coluna */
+        align-items: center; /* Centraliza os itens */
+        margin-inline: 5%; /* Ajusta a margem para que o conteúdo não fique muito afastado das bordas */
+        width: 100%; /* Garante que a largura ocupe todo o espaço disponível */
+    }
+
+    /* Ajustes para o nav */
+    nav {
+        height: auto; /* Deixa a altura do nav dinâmica */
+        padding: 10px 0; /* Ajusta o padding para não ficar apertado */
+    }
+
+    nav div {
+        display: flex;
+        flex-direction: column; /* Organiza os links do nav em uma coluna */
+        align-items: center; /* Centraliza os links */
+        width: 100%;
+    }
+
+    nav div a {
+        padding: 5px 10px; /* Ajusta o padding para os links ficarem mais próximos */
+        font-size: 12px; /* Diminui o tamanho da fonte */
+        color: black; /* Define a cor do texto */
+        text-decoration: none; /* Remove o sublinhado */
+    }
+}

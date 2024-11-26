@@ -1,0 +1,71 @@
+nav{
+    width:100%;
+    height: 50px;
+}
+nav div a{
+    padding: 9px 6.6%;
+}
+main{
+    width:1500px;
+    height: 2000px;
+    flex-direction: row;
+    margin-top:20px;
+}
+main div{
+    padding-top: 40px;
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+}
+main div a{
+    color: royalblue;
+    text-decoration: Inline;
+    padding: 4px 3px;
+    border-radius: 20px;    
+}
+main div a:hover{
+    text-decoration: inline;
+    color: red;
+}
+main div img{
+    width: 500px;
+    height: 300px;
+    border-radius:20px;
+}
+@media (max-width: 450px) {
+    nav {
+        height: auto; /* Deixa o nav com altura dinâmica */
+        padding: 10px 0; /* Ajusta o padding do nav */
+    }
+
+    nav div {
+        display: flex;
+        flex-direction: column; /* Organiza os itens do nav em coluna em telas pequenas */
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav div h3 {
+        padding: 5px;
+        font-size: 14px; /* Ajusta o tamanho da fonte */
+    }
+
+    nav div a {
+        padding: 5px 8px; /* Reduz o padding dos links */
+        font-size: 12px; /* Reduz o tamanho da fonte */
+        color: black;
+        text-decoration: none; /* Remove o sublinhado */
+    }
+    main {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    main div {
+        padding-top: 20px;
+    }
+    main div img {
+        width: 100%;
+        height: auto;
+    }
+}

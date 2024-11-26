@@ -1,0 +1,281 @@
+nav{
+    background-color:royalblue;
+    width: 100%;
+    height:50px;
+}
+nav div h3{
+    padding: 1px 6%;
+}
+nav div a{
+    padding: 9px 6%;
+}
+main{
+    height: 1700px;
+}
+main h3{
+    margin-inline: 2%;
+}
+main div h3{
+    align-items:center;
+    margin-inline: 2%;
+    margin-block: 2%;
+}
+.caixona{
+    width:1500px;
+    display:flex;
+    flex-direction: row;
+    height:  max-content;
+}
+.caixona img{
+    width:350px;
+    height:170px;
+    border-radius:20px;
+}
+.caixona div{
+    text-align: center;
+    margin-top: 30px;
+    margin: 20px;
+}
+.caixona div h3{
+    width: 350px;
+}
+.coiso img{
+    margin-left: 300px;
+}
+.coiso h3{
+    margin-left: 300px;
+}
+.coiso2 img{
+    margin-left: 300px;
+}
+.coiso2 h3{
+    margin-left: 300px;
+}
+.coiso3 img{
+    margin-left: 200px;
+}
+.coiso3 h3{
+    margin-left: 300px;
+}
+.coiso4 img{
+    margin-left: 300px;
+}
+.coiso4 h3{
+    margin-left: 300px;
+}
+.coiso5 img{
+    margin-left: 300px;
+}
+.coiso5 h3{
+    margin-left: 300px;
+}
+.coiso6 img{
+    margin-left: 300px;
+}
+.coiso6 h3{
+    margin-left: 300px;
+}
+.caixona2{
+    width:1500px;
+    display:flex;
+    flex-direction: row;
+    height:  max-content;
+}
+.caixona2 img{
+    width:350px;
+    height:170px;
+    border-radius:20px;
+}
+.caixona2 div{
+    margin:20px;
+}
+.caixona3{
+    width:1500px;
+    display:flex;
+    flex-direction: row;
+    height:  max-content;
+}
+.caixona3 img{
+    width:350px;
+    height:170px;
+    border-radius:20px;
+}
+.caixona3 div{
+    margin:20px;
+}
+.caixona4{
+    width:1500px;
+    display:flex;
+    flex-direction: row;
+    height:  max-content;
+}
+.caixona4 img{
+    width:350px;
+    height:170px;
+    border-radius:20px;
+}
+.caixona4 div{
+    margin:20px;
+}
+.caixona5{
+    width:1500px;
+    display:flex;
+    flex-direction: row;
+    height:  max-content;
+}
+.caixona5 img{
+    width:350px;
+    height:170px;
+    border-radius:20px;
+}
+.caixona5 div{
+    margin:20px;
+}
+.caixona6{
+    width:1500px;
+    display:flex;
+    flex-direction: row;
+    height:  max-content;
+}
+.caixona6 img{
+    width:350px;
+    height:170px;
+    border-radius:20px;
+}
+.caixona6 div{
+    margin:20px;
+}
+.botao{
+    width: 52px;
+    display:block;
+    color:aliceblue;
+    background-color:#4367C6;
+    border: solid 1px black;
+    color:black; 
+    text-decoration:none;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.botao2{
+    width: 100px;
+    height:25px;
+    display:block;
+    color:aliceblue;
+    background-color: #4367C6;
+    border:solid 1px black;
+    color:black;
+    text-decoration:none;
+    padding: 5px 25px;
+    border-radius: 20px;
+}
+@media (max-width: 450px) {
+    /* Ajustes no nav */
+    nav {
+        height: auto; /* Ajusta a altura do nav para se ajustar dinamicamente */
+        padding: 10px 0; /* Ajusta o padding do nav */
+    }
+
+    nav div {
+        display: flex;
+        flex-direction: column; /* Organiza os itens em uma coluna */
+        align-items: center; /* Centraliza os itens */
+        width: 100%;
+    }
+
+    nav div a {
+        padding: 5px 10px; /* Ajusta o padding dos links */
+        font-size: 12px; /* Ajusta o tamanho da fonte */
+        color: black; /* Cor branca para o texto */
+        text-decoration: none; /* Remove o sublinhado */
+    }
+
+    /* Ajustes para o main */
+    main {
+        width: 100%; /* Ajusta a largura do main */
+        height: auto; /* Ajusta a altura dinamicamente */
+        margin-top: 20px;
+    }
+
+    /* Ajustes nos títulos dentro do main */
+    main h3 {
+        margin-inline: 5%; /* Ajusta as margens para dispositivos móveis */
+    }
+
+    main div h3 {
+        align-items: center;
+        margin-inline: 5%; /* Ajusta as margens para centralizar */
+        margin-block: 2%;
+    }
+
+    /* Ajustes nas caixonas */
+    .caixona,
+    .caixona2,
+    .caixona3,
+    .caixona4,
+    .caixona5,
+    .caixona6 {
+        width: 100%; /* Ajusta a largura das caixonas para 100% */
+        display: flex;
+        flex-direction: column; /* Organiza as caixonas em uma coluna */
+        height: auto; /* Ajusta a altura dinamicamente */
+    }
+
+    .caixona img,
+    .caixona2 img,
+    .caixona3 img,
+    .caixona4 img,
+    .caixona5 img,
+    .caixona6 img {
+        width: 90%; /* Ajusta a largura das imagens para 90% da tela */
+        height: auto; /* Ajusta a altura proporcionalmente */
+        margin: 10px 0; /* Ajusta a margem */
+        border-radius: 20px;
+    }
+
+    .caixona div,
+    .caixona2 div,
+    .caixona3 div,
+    .caixona4 div,
+    .caixona5 div,
+    .caixona6 div {
+        text-align: center; /* Centraliza o texto dentro das caixonas */
+        margin: 10px 0; /* Ajusta as margens */
+    }
+
+    /* Ajustes nas classes coiso e outras */
+    .coiso img,
+    .coiso2 img,
+    .coiso3 img,
+    .coiso4 img,
+    .coiso5 img,
+    .coiso6 img {
+        margin-left: 0; /* Remove a margem à esquerda */
+        width: 90%; /* Ajusta a largura das imagens para 90% */
+    }
+
+    .coiso h3,
+    .coiso2 h3,
+    .coiso3 h3,
+    .coiso4 h3,
+    .coiso5 h3,
+    .coiso6 h3 {
+        margin-left: 0; /* Remove a margem à esquerda dos títulos */
+        text-align: center; /* Centraliza os títulos */
+    }
+
+    /* Ajustes para os botões */
+    .botao {
+        width: 100%; /* Ajusta a largura do botão */
+        padding: 10px 0; /* Ajusta o padding do botão */
+        font-size: 14px; /* Ajusta o tamanho da fonte */
+        text-align: center; /* Centraliza o texto dentro do botão */
+    }
+
+    .botao2 {
+        width: 100%; /* Ajusta a largura do botão */
+        height: 35px; /* Ajusta a altura do botão */
+        padding: 5px 0; /* Ajusta o padding */
+        font-size: 14px; /* Ajusta o tamanho da fonte */
+        text-align: center; /* Centraliza o texto dentro do botão */
+    }
+}

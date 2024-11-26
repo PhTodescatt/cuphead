@@ -1,0 +1,207 @@
+/* COMPUTADOR */
+*{
+    margin:0 auto;
+}
+body{
+    background-color:deepskyblue;
+    max-width: 1600px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+iframe{
+    width:300px;
+    height:134px;
+}
+
+header{
+    width:1000px;
+    display:flex;
+
+}
+.logo{
+    flex:40%;
+    background-image:url(LogoCelular.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    height:200px;
+}
+.slogan{
+    flex:50%;
+    font-size:40px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:black;
+    font-weight:bold;
+    display:flex;
+    align-items:center;
+}
+nav{
+    background-color:royalblue;
+    width:100%;
+    height:50px;
+    border: solid 3px black;
+    align-items: center;
+    box-sizing:border-box;
+}
+nav div{
+    display: flex; /*deixa os itens um do lado do outro*/
+    align-items: center;
+}
+nav div a{
+    color:black;
+    text-decoration:none;
+    margin:1px;
+    padding: 9px 14%;
+    transition: color 0.3s;
+}
+nav div a:hover{
+    text-decoration:none;
+    color:red;
+}
+main{
+    height: 330px;
+    margin-block: 90px;
+    width:100%;
+}
+main div a{
+    transition: color 0.3s;
+}
+.caixona{
+    width:1500px;
+    display:flex;
+    flex-direction: row;
+    height:  max-content;
+}
+.caixona img{
+    width:380px;
+    height:270px;
+    border-radius:20px;
+}
+.caixona div{
+    text-align: center;
+    margin-top: 17px;
+}
+.caixona div h3{
+    width: 550px;
+}
+.botao{
+    width: 60px;
+    display:block;
+    color:aliceblue;
+    background-color:#4367C6;
+    border: solid 1px black;
+    color:black; 
+    text-decoration:none;
+    padding: 5px 25px;
+    border-radius: 20px;
+    transition: color 0.3s;
+}
+.botao:hover{
+    text-decoration:none;
+    color:red;
+}
+.botao2{
+    width: 115px;
+    display:block;
+    color:aliceblue;
+    background-color: #4367C6;
+    border:solid 1px black;
+    color:black;
+    text-decoration:none;
+    padding: 5px 25px;
+    border-radius: 20px;
+    transition: color 0.3s;
+}
+.botao2:hover{
+    text-decoration:none;
+    color:red;
+}
+footer{
+    width:100%;
+    height: max-content;
+}
+footer div{
+    flex:1;
+    padding: 8px;
+    box-sizing:border-box;
+    background-color:royalblue;
+    border:solid black 3px;
+}
+footer div a{
+    display:block;
+    color:white;
+    text-decoration:none;
+}
+footer div a:hover{
+    text-decoration:none;
+    color:salmon;
+}
+footer div p{
+    color:darkred;
+}
+.caixinha{
+    display:flex;
+    align-items:center;
+}
+.caixinha a{
+    transition: color 0.3s;
+}
+    @media (max-width: 450px) {
+        body {
+            max-width: 100%; /* Ajusta o layout para o tamanho da tela */
+        }
+    
+        header {
+            flex-direction: column; /* Empilha os itens no header */
+            width: 100%; /* Header ocupa toda a largura */
+        }
+    
+        .logo {
+            height: 100px; /* Reduz o tamanho do logo */
+            background-size: contain; /* Ajusta a imagem */
+        }
+    
+        .slogan {
+            font-size: 24px; /* Reduz o tamanho do texto */
+            text-align: center;
+        }
+    
+        nav div {
+            justify-content: center; /* Centraliza os links horizontalmente */
+        }
+    
+        nav div a {
+            padding: 5px 3%; /* Reduz o padding para ajustar o espaçamento */
+            font-size: 10px; /* Diminui o tamanho da fonte */
+            word-spacing: 2px; /* Ajusta o espaçamento entre palavras */
+            white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+        }
+    
+        .caixona {
+            flex-direction: column; /* Empilha as caixas */
+            width: 100%; /* Ajusta a largura */
+            margin-top: 10px; /* Reduz a distância entre o nav e a caixona */
+        }
+    
+        .caixona img {
+            width: 100%; /* Imagens ocupam toda a largura disponível */
+            height: auto; /* Mantém a proporção */
+        }
+    
+        .caixona div h3 {
+            width: 100%; /* Ajusta o texto para a largura */
+            font-size: 18px; /* Reduz o tamanho do texto */
+        }
+    
+        .botao, .botao2 {
+            width: auto; /* Ajusta os botões para se adaptarem */
+            padding: 5px 15px; /* Reduz o espaçamento */
+            font-size: 14px; /* Ajusta o tamanho do texto */
+        }
+    footer div {
+        padding: 5px; /* Reduz o padding */
+        font-size: 12px; /* Reduz o tamanho do texto */
+    }
+
+    iframe {
+        height: auto; /* Ajusta altura para manter a proporção */
+    }

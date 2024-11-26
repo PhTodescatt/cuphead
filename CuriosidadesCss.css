@@ -1,0 +1,135 @@
+body{
+    max-width: 1600px;
+}
+nav{
+    background-color:royalblue;
+    width: 100%;
+    height:50px;
+}
+nav div h3{
+    padding: 1px 45px;
+}
+nav div a{
+    padding: 9px 4.3%;
+}
+main{
+    width:1500px;
+    height: 1100px;
+    flex-direction: row;
+    margin-top:20px;
+}
+main div{
+    padding-top: 40px;
+    display:flex;
+    align-items:center;
+    flex-direction: row;
+}
+main div a{
+    color: royalblue;
+    text-decoration: Inline;
+    padding: 4px 3px;
+    border-radius: 20px;    
+}
+main div a:hover{
+    text-decoration: inline;
+    color: red;
+}
+main div h3{
+    max-width: 900px;
+}
+main div img{
+    width: 400px;
+    height: 250px;
+    border-radius:20px;
+}
+footer{
+    width: 100%;
+    margin-top:140px;
+}
+.curio img{
+    margin-left: 26%;
+}
+.curio2 img{
+    margin-left: 32%;
+}
+.curio3 img{
+    margin-left: 6.5%;
+}
+.curio4 img{
+    margin-left: 6.5%;
+}
+@media (max-width: 450px) {
+    /* Ajustes no corpo */
+    body {
+        max-width: 100%; /* Deixa o body com largura 100% para dispositivos móveis */
+    }
+
+    /* Ajustes no nav */
+    nav {
+        height: auto; /* Ajusta a altura do nav para que se ajuste dinamicamente */
+        padding: 10px 0; /* Ajusta o padding para o nav */
+    }
+
+    nav div {
+        display: flex;
+        flex-direction: column; /* Organiza os links em uma coluna */
+        align-items: center; /* Centraliza os itens */
+        width: 100%;
+    }
+
+    nav div a {
+        padding: 5px 10px; /* Ajusta o padding para os links ficarem mais próximos */
+        font-size: 12px; /* Diminui o tamanho da fonte */
+        color: black; /* Muda a cor para branco */
+        text-decoration: none; /* Remove o sublinhado */
+    }
+
+    /* Ajustes para o main */
+    main {
+        width: 100%; /* Ajusta a largura para 100% */
+        height: auto; /* Ajusta a altura dinamicamente */
+        margin-top: 20px;
+    }
+
+    main div {
+        padding-top: 20px; /* Ajusta o padding para o conteúdo não ficar apertado */
+        display: flex;
+        flex-direction: column; /* Organiza os itens em coluna */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    /* Ajustes para os links dentro do main */
+    main div a {
+        color: royalblue;
+        text-decoration: inline;
+        font-size: 14px; /* Ajusta o tamanho da fonte para dispositivos móveis */
+    }
+
+    /* Ajuste de hover */
+    main div a:hover {
+        color: red;
+    }
+
+    /* Ajustes para as imagens */
+    main div img {
+        width: 100%; /* Ajusta a largura das imagens para 100% */
+        height: auto; /* Ajusta a altura proporcionalmente */
+        margin: 10px 0; /* Ajusta as margens */
+        border-radius: 20px;
+    }
+
+    /* Ajustes para as classes curio e outras imagens */
+    .curio img,
+    .curio2 img,
+    .curio3 img,
+    .curio4 img {
+        margin-left: 0%; /* Remove a margem à esquerda */
+        width: 90%; /* Deixa as imagens ocuparem 90% da largura */
+    }
+
+    /* Ajustes para o footer */
+    footer {
+        width: 100%; /* Ajusta a largura do footer */
+        margin-top: 20px; /* Ajusta a margem superior */
+    }
+}

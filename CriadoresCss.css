@@ -1,0 +1,126 @@
+body{
+    max-width: 1600px;
+}
+nav{
+    background-color:royalblue;
+    width: 100%;
+    height:50px;
+}
+nav div h3{
+    padding: 1px 6%;
+}
+nav div a{
+    padding: 9px 6%;
+}
+main{
+    width:1500px;
+    height: 900px;
+    flex-direction: row;
+    margin-top:20px;
+}
+main div{
+    padding-top: 40px;
+    display:flex;
+    flex-direction: column;
+}
+main div a{
+    color: royalblue;
+    text-decoration: Inline;
+    padding: 4px 3px;
+    border-radius: 20px;
+    margin-left: 4%;
+}
+main div a:hover{
+    text-decoration: inline;
+    color: red;
+}
+main div h3{
+    margin-left: 4%;
+}
+main div img{
+    width: 500px;
+    height: 300px;
+    margin-left: 4%;
+    border-radius: 20px;
+}
+.you1{
+    display: flex;
+    flex-direction: row;
+}
+.tube1{
+    display: flex;
+    flex-direction: row;
+}
+@media (max-width: 450px) {
+    /* Ajustes no body */
+    body {
+        max-width: 100%; /* Ajusta a largura do body para 100% */
+    }
+
+    /* Ajustes no nav */
+    nav {
+        height: auto; /* Torna a altura do nav dinâmica */
+        padding: 10px 0; /* Ajusta o padding para melhor visualização em telas pequenas */
+    }
+
+    nav div {
+        display: flex;
+        flex-direction: column; /* Organiza os links do nav em uma coluna */
+        align-items: center; /* Centraliza os links */
+        width: 100%;
+    }
+
+    nav div h3 {
+        padding: 0 10px; /* Ajusta o padding de h3 */
+    }
+
+    nav div a {
+        padding: 6px 10px; /* Ajusta o padding dos links */
+        font-size: 12px; /* Diminui o tamanho da fonte */
+        color: black; /* Define a cor dos links */
+        text-decoration: none; /* Remove o sublinhado */
+    }
+
+    /* Ajustes no main */
+    main {
+        width: 100%; /* Ajusta a largura do main para 100% */
+        height: auto; /* Permite que a altura se ajuste conforme o conteúdo */
+        margin-top: 20px;
+    }
+
+    main div {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column; /* Alinha os itens em coluna */
+        align-items: center; /* Centraliza os itens */
+        width: 100%;
+    }
+
+    /* Ajustes nos links dentro do main */
+    main div a {
+        font-size: 14px; /* Ajusta o tamanho da fonte para mobile */
+        padding: 8px 12px; /* Ajusta o padding */
+        margin-left: 0; /* Remove a margem esquerda */
+    }
+
+    /* Ajustes de hover */
+    main div a:hover {
+        color: red; /* Alteração de cor no hover */
+    }
+
+    /* Ajustes nas imagens */
+    main div img {
+        width: 90%; /* Ajusta a largura da imagem para 90% da tela */
+        height: auto; /* Mantém a altura proporcional */
+        margin-left: 0; /* Remove a margem esquerda */
+        border-radius: 20px;
+    }
+
+    /* Ajustes para as classes .you1 e .tube1 */
+    .you1, .tube1 {
+        display: flex;
+        flex-direction: column; /* Organiza os itens em coluna em telas pequenas */
+        align-items: center; /* Centraliza os itens */
+        width: 100%; /* Ajusta a largura para 100% */
+    }
+}

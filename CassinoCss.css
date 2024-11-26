@@ -1,0 +1,116 @@
+nav{
+    width: 100%;
+    height:50px;
+}
+nav div a{
+    padding: 9px 80px;
+}
+main{
+    height:1130px;
+    width:1500px;
+    margin-block: 15px;
+}
+main div{
+    display:flex;
+    flex-direction:column;
+    margin:10px;
+    margin-top:15px;
+}
+main div a{
+    color: royalblue;
+    text-decoration: Inline;
+    padding: 4px 3px;
+    border-radius: 20px;   
+}
+main div a:hover{
+    text-decoration: inline;
+    color: red;
+}
+main div h3{
+    margin:15px;
+}
+main div img{
+    height:270px;
+    width:500px;
+    border-radius: 20px;
+}
+.IrVoltar{
+    display: flex;
+    flex-direction:row;
+    padding: 0px 640px;
+}
+/* Estilos para dispositivos móveis */
+@media (max-width: 450px) {
+    /* Ajustes gerais para o body */
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Impede a rolagem horizontal */
+    }
+
+    nav {
+        height: auto; /* Deixa a altura do nav dinâmica */
+        padding: 10px 0; /* Ajusta o padding do nav para evitar que fique muito apertado */
+    }
+
+    nav div {
+        display: flex;
+        flex-direction: column; /* Organiza os links do nav em uma coluna para caber melhor na tela */
+        align-items: center; /* Centraliza os links */
+        width: 100%;
+    }
+
+    nav div a {
+        padding: 5px 10px; /* Ajusta o padding para que os links fiquem mais próximos */
+        font-size: 12px; /* Diminui o tamanho da fonte */
+        color: black; /* Define a cor do texto */
+        text-decoration: none; /* Remove o sublinhado */
+    }
+
+    /* Ajustes para o main */
+    main {
+        width: 100%;
+        height: auto;
+        margin-block: 10px;
+    }
+
+    /* Ajustes para as divs dentro de main */
+    main div {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza os itens */
+        margin: 5px 0;
+    }
+
+    main div h3 {
+        margin: 10px;
+        font-size: 16px; /* Diminui o tamanho da fonte do título */
+    }
+
+    main div a {
+        padding: 3px 6px;
+        font-size: 14px; /* Ajusta o tamanho da fonte */
+        color: royalblue;
+        text-decoration: none;
+        border-radius: 20px;
+    }
+
+    main div a:hover {
+        color: red;
+    }
+
+    /* Ajustes para as imagens dentro do main */
+    main div img {
+        width: 90%; /* Ajusta a largura das imagens para 90% da tela */
+        height: auto; /* Mantém a proporção das imagens */
+        border-radius: 20px;
+    }
+
+    /* Ajustes para a classe IrVoltar */
+    .IrVoltar {
+        display: flex;
+        flex-direction: column; /* Organiza os itens em coluna */
+        padding: 0 10px; /* Ajusta o padding */
+        align-items: center; /* Centraliza os itens */
+    }
+}

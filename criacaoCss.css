@@ -1,0 +1,149 @@
+body{
+    max-width: 1600px;
+}
+nav{
+    background-color:royalblue;
+    width: 100%;
+    height:50px;
+}
+nav div h3{
+    padding: 1px 45px;
+}
+nav div a{
+    padding: 9px 4.5%;
+}
+main{
+    width:1500px;
+    height: 1650px;
+    flex-direction: row;
+    margin-top:20px;
+}
+main div{
+    padding-top: 40px;
+    display:flex;
+    align-items:center;
+    display:flex;
+    flex-direction: column;
+}
+main div a{
+    color: royalblue;
+    text-decoration: Inline;
+    padding: 4px 3px;
+    border-radius: 20px;    
+}
+main div a:hover{
+    text-decoration: inline;
+    color: red;
+}
+main div img{
+    width: 450px;
+    height: 250px;
+    border-radius: 20px;
+    padding: 0px 120px;
+}
+.botao4{
+    width: 45px;
+    color:aliceblue;
+    background-color:#4367C6;
+    border: solid 1px black;
+    color:black;
+    text-decoration:none;
+    padding:4px 3px;
+    border-radius: 20px;
+}
+.botao3{
+    width: 500px;
+    height: 300px;
+    display:flex;
+    flex-direction:row;
+    margin: 10px;
+    border-radius:20px;
+}
+.Studio{
+    display:flex;
+    flex-direction: row;
+}
+.Studio img{
+    padding: 0px 12px;
+}
+footer{
+    width: 100%;
+    margin-top:140px;
+}
+@media (max-width: 450px) {
+    body {
+        max-width: 100%; /* Ajusta o corpo para a largura da tela */
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Evita rolagem horizontal */
+    }
+
+    nav {
+        height: auto; /* Deixa o nav com altura dinâmica */
+        padding: 10px 0; /* Ajusta o padding do nav */
+    }
+
+    nav div {
+        display: flex;
+        flex-direction: column; /* Organiza os itens do nav em coluna em telas pequenas */
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav div h3 {
+        padding: 5px;
+        font-size: 14px; /* Ajusta o tamanho da fonte */
+    }
+
+    nav div a {
+        padding: 5px 8px; /* Reduz o padding dos links */
+        font-size: 12px; /* Reduz o tamanho da fonte */
+        color: black;
+        text-decoration: none; /* Remove o sublinhado */
+    }
+
+    main {
+        width: 100%; /* Ajusta a largura do main para ocupar toda a tela */
+        height: auto; /* Ajusta a altura de acordo com o conteúdo */
+        margin-top: 10px;
+        flex-direction: column; /* Organiza os itens na vertical */
+    }
+
+    main div {
+        padding-top: 20px; /* Reduz o padding superior */
+        align-items: flex-start; /* Alinha o conteúdo à esquerda */
+        flex-direction: column; /* Mantém o layout dos itens em coluna */
+    }
+
+    main div img {
+        width: 100%; /* Ajusta a imagem para ocupar toda a largura disponível */
+        height: auto; /* Mantém a proporção da imagem */
+        padding: 0; /* Remove o padding lateral da imagem */
+    }
+
+    .botao4 {
+        width: auto; /* Ajusta a largura do botão */
+        padding: 6px 12px; /* Ajusta o padding para caber melhor na tela */
+        font-size: 12px; /* Diminui o tamanho da fonte do botão */
+    }
+
+    .botao3 {
+        width: 100%; /* Ajusta o botão para ocupar toda a largura */
+        height: auto; /* Ajusta a altura conforme necessário */
+        flex-direction: column; /* Organiza os itens na vertical */
+        margin: 5px 0; /* Ajusta a margem para maior controle */
+    }
+
+    .Studio {
+        flex-direction: column; /* Organiza os itens da classe Studio na vertical */
+    }
+
+    .Studio img {
+        padding: 0 0 10px 0; /* Ajusta o padding das imagens dentro de .Studio */
+    }
+
+    footer {
+        margin-top: 30px; /* Ajusta a margem superior do rodapé */
+        text-align: center; /* Centraliza o texto do rodapé */
+    }
+}
